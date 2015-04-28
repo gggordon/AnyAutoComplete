@@ -164,5 +164,5 @@
 
 		return _self;
 	}
-	window.AnyAutoComplete = AnyAutoComplete;
+	window.AnyAutoComplete = AnyCompleteSearch;
 })(window,jQuery);
