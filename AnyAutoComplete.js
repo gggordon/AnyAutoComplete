@@ -28,6 +28,9 @@
 		_self.$tbox = $(divNode);
 		_self.$tbox.addClass('any-complete-search-box');
 		_self.dataSource = options.dataSource || {};
+		if(Array.isArray(_self.dataSource)){
+		    _self.dataSource = {' ':_self.dataSource};
+		}
 		_self.htmlNode = divNode;
 		_self.val = function (newVal) {
 			if(newVal){
