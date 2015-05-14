@@ -1,0 +1,27 @@
+{
+  "name": "AnyAutoComplete",
+  "main": "AnyAutoComplete.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/gggordon/AnyAutoComplete",
+  "authors": [
+    "gggordon <ggg_gilroy@yahoo.com>"
+  ],
+  "description": "A jquery plugin that allows autocomplete suggestions anywhere within text input elements",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "jquery",
+    "auto",
+    "complete",
+    "suggestions"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
