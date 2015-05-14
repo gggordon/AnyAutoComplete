@@ -1,4 +1,3 @@
-(function(window,$){
 /**
  * @author ggordon
  * @created 28.4.2015
@@ -20,7 +19,10 @@
 	 *       }
 	 *   }
 	 */
-	function AnyCompleteSearch(divNode, options) {
+
+(function(window,$){
+
+	function AnyAutoComplete(divNode, options) {
 		if (divNode == undefined || divNode == null)
 			return;
 		options = options || {};
@@ -167,5 +169,10 @@
 
 		return _self;
 	}
-	window.AnyAutoComplete = AnyCompleteSearch;
+	window.AnyAutoComplete = AnyAutoComplete;
+	$.fn.anyAutoComplete=function(options){
+	     return this.each(function(i,el){
+		             new AnyAutoComplete(el,options);
+		        });
+	};
 })(window,jQuery);
