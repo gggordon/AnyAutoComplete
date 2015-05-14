@@ -1,24 +1,36 @@
 /**
  * @author ggordon
  * @created 28.4.2015
+ * @license MIT
 */
-    /**  
-	 *   divNode - HTMLInputElement  - textbox node
-	 *   options - Object
-	 *   =================
-	 *   options : {
-	 *       dataSource : { //keywords or suggestions
-	 *           'Cat 1 Name':[
-	 *               'Elem 1',
-	 *               'Elem 2'
-	 *           ],
-	 *           'Cat 2 Name':[
-	 *               'Elem 1',
-	 *               'Elem 2'
-	 *           ]
-	 *       }
-	 *   }
-	 */
+//-----------------Usage-----------------------
+//---------------------------------------------
+//------------ With jQuery --------------------
+/**
+ *   $('.suggestion-boxes').anyAutoComplete(options);   
+ */
+//------------ Regular --------------------
+/**
+ *   new AnyAutoComplete(divNode, options);   
+ */
+//------------ Parameters ----------------------
+/**  
+ *   divNode - HTMLInputElement  - textbox node
+ *   options - Object
+ *   =================
+ *   options : {
+ *       dataSource : { //keywords or suggestions
+ *           'Cat 1 Name':[
+ *               'Elem 1',
+ *               'Elem 2'
+ *           ],
+ *           'Cat 2 Name':[
+ *               'Elem 1',
+ *               'Elem 2'
+ *           ]
+ *       }
+ *   }
+ */
 
 (function(window,$){
 
