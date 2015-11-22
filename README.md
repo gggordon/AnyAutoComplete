@@ -19,6 +19,9 @@ Dependencies
 Getting Started
 ---------------
 
+Use npm
+   npm install --save anyautocomplete
+
 Use bower
 
     bower install --save AnyAutoComplete
