@@ -1,7 +1,7 @@
 {
   "name": "AnyAutoComplete",
   "main": "AnyAutoComplete.js",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "homepage": "https://github.com/gggordon/AnyAutoComplete",
   "authors": [
     "gggordon <ggg_gilroy@yahoo.com>"
