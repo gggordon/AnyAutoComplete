@@ -1,0 +1,30 @@
+{
+  "name": "anyautocomplete",
+  "version": "1.0.1",
+  "description": "More flexible search suggestions ",
+  "main": "AnyAutoComplete.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gggordon/AnyAutoComplete.git"
+  },
+  "keywords": [
+    "flexible",
+    "search",
+    "suggestion",
+    "jquery",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "gggordon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gggordon/AnyAutoComplete/issues"
+  },
+  "dependencies":{
+    "jquery":"2.1.*"
+  },
+  "homepage": "http://gggordon.github.io/AnyAutoComplete/"
+}
