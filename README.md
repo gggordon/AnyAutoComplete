@@ -20,7 +20,8 @@ Getting Started
 ---------------
 
 Use npm
-   npm install --save anyautocomplete
+
+    npm install --save anyautocomplete
 
 Use bower
 
