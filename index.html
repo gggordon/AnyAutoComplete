@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/AnyAutoComplete.css" media="screen">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -31,25 +31,27 @@
           <h2>
 <a id="anyautocomplete" class="anchor" href="#anyautocomplete" aria-hidden="true"><span class="octicon octicon-link"></span></a>AnyAutoComplete</h2>
 
-<blockquote>
+
 <p>A plugin created for search suggestions that is more flexible.</p>
-</blockquote>
+
 
 <h2>
 <a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
 
-<blockquote>
-<p>Most search suggestion plugins were very strict, didn't allow users to
+
+<p id="pluginDescription">Most search suggestion plugins were very strict, didn't allow users to
 still write naturally while using suggestions, only allowing search
 suggestions to be at the end of input text, AnyAutoComplete solves
 this!</p>
-</blockquote>
 
+<h2>Try it out</h2>
+<p>Enter anything you would like in the area below. If one of these words are in the description above, you'll be assisted by AnyAutoComplete. <i>Pressing tab automatically adds this first word in the suggestion list</i></p>
+<input type="text" id="pluginDemoArea" placeholder="Start typing here"/>
 <h2>
 <a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <ul>
-<li>-jQuery 2.*</li>
+<li>-jQuery 2.* </li>
 </ul>
 
 <h2>
@@ -70,6 +72,9 @@ this!</p>
 <pre><code>&lt;script type="text/javascript" src="AnyAutoComplete.min.js"&gt;&lt;/script&gt;
 </code></pre>
 
+<p>This plugin works well with bootstrap, otherwise you may include the default stylesheet also from <a href="https://github.com/gggordon/AnyAutoComplete/blob/master/AnyAutoComplete.css">github</a></p>
+<pre><code>&lt;link type="text/css" rel="stylesheet" href="AnyAutoComplete.css" /&gt;
+</code></pre>
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
@@ -106,6 +111,9 @@ options : {
 <a id="enjoy" class="anchor" href="#enjoy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enjoy</h2>
 
 <p>Enjoy this project and if you have any issues feel free to state them here on github or contribute. </p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIT License</h2>
         </section>
 
         <aside id="sidebar">
@@ -124,8 +132,25 @@ options : {
         </aside>
       </div>
     </div>
-
-            <script type="text/javascript">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js" ></script>
+	<script type="text/javascript" src="./javascripts/AnyAutoComplete.min.js" ></script>
+	<script type="text/javascript">
+		(function(){
+		    var txtNode = document.getElementById("pluginDemoArea");
+			var suggestions = (function(suggestionNode){
+								  if(suggestionNode){
+								       return suggestionNode.innerText.split(' ') || [];
+								  }
+								  return [];
+				              })(document.getElementById("pluginDescription"));
+			new AnyAutoComplete(txtNode, {
+			    dataSource:suggestions
+			}); 
+		})();
+		
+	</script>
+            <!--
+			<script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -135,6 +160,7 @@ options : {
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+		  -->
 
   </body>
 </html>

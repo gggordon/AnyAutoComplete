@@ -879,3 +879,15 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
 
+/* Custom */
+#pluginDemoArea {
+    width:100%;
+	padding:12px;
+	border:1px solid #e7e7e7;
+	border-radius:4px;
+	box-shadow:2px 2px 2px #e7e7e7;
+	-moz-box-shadow:2px 2px 2px #e7e7e7;
+	-o-box-shadow:2px 2px 2px #e7e7e7;
+	-webkit-box-shadow:2px 2px 2px #e7e7e7;
+}
+
