@@ -31,6 +31,10 @@ Then Include in html file
 
     <script type="text/javascript" src="AnyAutoComplete.min.js"></script>
 
+This plugin integrates well with bootstrap. Without bootstrap, you may include the default stylesheet 
+
+    <link rel="stylesheet" type="text/javascript" href="AnyAutoComplete.css" />
+
 Usage
 -----
 With jQuery
