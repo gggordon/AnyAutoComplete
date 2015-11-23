@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,86 +15,87 @@
     <![endif]-->
 
     <title>Anyautocomplete by gggordon</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="inner">
-        <h1>Anyautocomplete</h1>
-        <h2>A plugin created for search suggestions that is more flexible</h2>
-        <a href="https://github.com/gggordon/AnyAutoComplete" class="button"><small>View project on</small> GitHub</a>
-      </div>
+        <div class="inner">
+            <h1>Anyautocomplete</h1>
+            <h2>A plugin created for search suggestions that is more flexible</h2>
+            <a href="https://github.com/gggordon/AnyAutoComplete" class="button"><small>View project on</small> GitHub</a>
+        </div>
     </header>
 
     <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h2>
+        <div class="inner clearfix">
+            <section id="main-content">
+                <h2>
 <a id="anyautocomplete" class="anchor" href="#anyautocomplete" aria-hidden="true"><span class="octicon octicon-link"></span></a>AnyAutoComplete</h2>
 
 
-<p>A plugin created for search suggestions that is more flexible.</p>
+                <p>A plugin created for search suggestions that is more flexible.</p>
 
 
-<h2>
+                <h2>
 <a id="why" class="anchor" href="#why" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why?</h2>
 
 
-<p id="pluginDescription">Most search suggestion plugins were very strict, didn't allow users to
-still write naturally while using suggestions, only allowing search
-suggestions to be at the end of input text, AnyAutoComplete solves
-this!</p>
+                <p id="pluginDescription">Most search suggestion plugins were very strict, didn't allow users to still write naturally while using suggestions, only allowing search suggestions to be at the end of input text, AnyAutoComplete solves this!
+                </p>
 
-<h2>Try it out</h2>
-<p>Enter anything you would like in the area below. If one of these words are in the description above, you'll be assisted by AnyAutoComplete. <i>Pressing tab automatically adds this first word in the suggestion list</i></p>
-<input type="text" id="pluginDemoArea" placeholder="Start typing here"/>
-<h2>
+                <h2>Try it out</h2>
+                <p>Enter anything you would like in the area below. If one of these words are in the description above, you'll be assisted by AnyAutoComplete. <i>Pressing tab automatically adds this first word in the suggestion list</i>
+                </p>
+                <input type="text" id="pluginDemoArea" placeholder="Start typing here" />
+                <h2>
 <a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
-<ul>
-<li>-jQuery 2.* </li>
-</ul>
+                <ul>
+                    <li>-jQuery 2.* </li>
+                </ul>
 
-<h2>
+                <h2>
 <a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h2>
-<p>Use npm</p>
+                <p>Use npm</p>
 
-<pre><code>npm install --save anyautocomplete
+                <pre><code>npm install --save anyautocomplete
 </code></pre>
-<p>Use bower</p>
+                <p>Use bower</p>
 
-<pre><code>bower install --save AnyAutoComplete
-</code></pre>
-
-<p>or Download minified script from GitHub</p>
-
-<pre><code>https://github.com/gggordon/AnyAutoComplete/blob/master/AnyAutoComplete.min.js
+                <pre><code>bower install --save AnyAutoComplete
 </code></pre>
 
-<p>Then Include in html file</p>
+                <p>or Download minified script from GitHub</p>
 
-<pre><code>&lt;script type="text/javascript" src="AnyAutoComplete.min.js"&gt;&lt;/script&gt;
+                <pre><code>https://github.com/gggordon/AnyAutoComplete/blob/master/AnyAutoComplete.min.js
 </code></pre>
 
-<p>This plugin works well with bootstrap, otherwise you may include the default stylesheet also from <a href="https://github.com/gggordon/AnyAutoComplete/blob/master/AnyAutoComplete.css">github</a></p>
-<pre><code>&lt;link type="text/css" rel="stylesheet" href="AnyAutoComplete.css" /&gt;
+                <p>Then Include in html file</p>
+
+                <pre><code>&lt;script type="text/javascript" src="AnyAutoComplete.min.js"&gt;&lt;/script&gt;
 </code></pre>
-<h2>
+
+                <p>This plugin works well with bootstrap, otherwise you may include the default stylesheet also from <a href="https://github.com/gggordon/AnyAutoComplete/blob/master/AnyAutoComplete.css">github</a>
+                </p>
+                <pre><code>&lt;link type="text/css" rel="stylesheet" href="AnyAutoComplete.css" /&gt;
+</code></pre>
+                <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>With jQuery</p>
+                <p>With jQuery</p>
 
-<pre><code>$('.suggestion-boxes').anyAutoComplete(options); 
+                <pre><code>$('.suggestion-boxes').anyAutoComplete(options); 
 </code></pre>
 
-<p>or standalone</p>
+                <p>or standalone</p>
 
-<pre><code>new AnyAutoComplete(divNode, options);
+                <pre><code>new AnyAutoComplete(divNode, options);
 </code></pre>
 
-<p>where</p>
+                <p>where</p>
 
-<pre><code>divNode - HTMLInputElement  - textbox node
+                <pre><code>
+divNode - HTMLInputElement  - textbox node
 options - Object
 =================
 options : {
@@ -110,49 +112,48 @@ options : {
 }
 </code></pre>
 
-<h2>
+                <h2>
 <a id="enjoy" class="anchor" href="#enjoy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Enjoy</h2>
 
-<p>Enjoy this project and if you have any issues feel free to state them here on github or contribute. </p>
+                <p>Enjoy this project and if you have any issues feel free to state them here on github or contribute. </p>
 
-<h2>
+                <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>MIT License</h2>
-        </section>
+            </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/gggordon/AnyAutoComplete/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/gggordon/AnyAutoComplete/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+            <aside id="sidebar">
+                <a href="https://github.com/gggordon/AnyAutoComplete/zipball/master" class="button">
+                    <small>Download</small> .zip file
+                </a>
+                <a href="https://github.com/gggordon/AnyAutoComplete/tarball/master" class="button">
+                    <small>Download</small> .tar.gz file
+                </a>
 
-          <p class="repo-owner"><a href="https://github.com/gggordon/AnyAutoComplete"></a> is maintained by <a href="https://github.com/gggordon">gggordon</a>.</p>
+                <p class="repo-owner">
+                    <a href="https://github.com/gggordon/AnyAutoComplete"></a> is maintained by <a href="https://github.com/gggordon">gggordon</a>.</p>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+                <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+            </aside>
+        </div>
     </div>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js" ></script>
-	<script type="text/javascript" src="./javascripts/AnyAutoComplete.min.js" ></script>
-	<script type="text/javascript">
-		(function(){
-		    var txtNode = document.getElementById("pluginDemoArea");
-			var suggestions = (function(suggestionNode){
-								  if(suggestionNode){
-								       return suggestionNode.innerText.split(' ') || [];
-								  }
-								  return [];
-				              })(document.getElementById("pluginDescription"));
-			new AnyAutoComplete(txtNode, {
-			    dataSource:suggestions
-			}); 
-		})();
-		
-	</script>
-            <!--
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascripts/AnyAutoComplete.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var txtNode = document.getElementById("pluginDemoArea");
+            var suggestions = (function (suggestionNode) {
+                if (suggestionNode) {
+                    return suggestionNode.innerText.split(' ') || [];
+                }
+                return [];
+            })(document.getElementById("pluginDescription"));
+            new AnyAutoComplete(txtNode, {
+                dataSource: suggestions
+            });
+        })();
+
+    </script>
+    <!--
 			<script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -165,5 +166,6 @@ options : {
           </script>
 		  -->
 
-  </body>
+</body>
+
 </html>
