@@ -146,9 +146,11 @@
 					return a.priority > b.priority;
 				});
 			return list.map(function (el) {
-			    if(el.word != "")
-				return el.word;
-			}).join(' ').replace(/  /g, ' ').split(' ');
+			    if(el && el.word && el.word.trim() != "")
+				return el.word.replace(/  /g,' ').trim();
+			    return null;
+			})
+			.filter(function(word){ return word != null;});
 		};
 
 		_self.suggesstionList = function () {
